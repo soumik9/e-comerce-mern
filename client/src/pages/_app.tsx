@@ -1,5 +1,7 @@
 import { dashboardLayoutUrls } from '@/config/constants/constants';
 import '@/styles/globals.css'
+import '@/styles/dashboard.css'
+import '@/styles/tailwind.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import DashboardLayout from '@/components/Layout/DashboardLayout/DashboardLayout';

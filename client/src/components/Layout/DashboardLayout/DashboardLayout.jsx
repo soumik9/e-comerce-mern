@@ -45,14 +45,6 @@ const DashboardLayout = ({ children }) => {
 
                 <Menu
                     menuItemStyles={{
-                        // button: ({ level, active, hover }) => {
-                        //     // only apply styles on first level elements of the tree
-                        //     if (level === 0)
-                        //         return {
-                        //             color: active ? 'white' : 'black',
-                        //             backgroundColor: active ? '#615387' : 'inherit',
-                        //         };
-                        // },
                         button: ({ active, hover }) => {
                             let backgroundColor = 'inherit';
                             let color = 'black';
@@ -60,11 +52,6 @@ const DashboardLayout = ({ children }) => {
                             if (active || hover) {
                                 backgroundColor = '#3B3060 !important';
                                 color = 'white';
-                            } else if (hover) {
-                                backgroundColor = '#615387 !important';
-                            } else {
-                                // backgroundColor = 'inherit';
-                                // color = 'black';
                             }
 
                             return {
@@ -85,13 +72,6 @@ const DashboardLayout = ({ children }) => {
                                 // item.to === '/user' && (location.pathname === '/user/add' || location.pathname.slice(0, 11) === '/user/edit/') ||
                                 // item.to === '/item' && (location.pathname === '/item/add' || location.pathname.slice(0, 11) === '/item/edit/')
                             }
-                            rootStyles={{
-                                ['css-1k23mnk']: {
-                                    '&:hover': {
-                                        backgroundColor: '#666798',
-                                    },
-                                },
-                            }}
                         >
                             {item.text}
                         </MenuItem>
@@ -108,17 +88,8 @@ const DashboardLayout = ({ children }) => {
                     setCollapsed={setCollapsed}
                 />
 
-                <div className='mt-8 px-5'>
-                    <div className='bg-white p-10 rounded-sm'>
-
-                        <h2 className='text-[20px] text-primary'>asd</h2>
-
-                        <div className='mt-2'>
-                            {children}
-                        </div>
-
-                    </div>
-
+                <div className='mt-8 px-10'>
+                    {children}
                 </div>
 
             </main>

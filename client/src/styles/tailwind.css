@@ -1,0 +1,13 @@
+.f-center {
+    @apply flex justify-center items-center;
+}
+
+.trans {
+    @apply transition ease-in-out duration-300;
+}
+
+.cardLayout {
+    @apply bg-primary-300 shadow-md rounded-md;
+    background: rgb(200, 198, 254);
+    background: linear-gradient(90deg, rgba(102, 103, 152, 1) 0%, rgba(150, 149, 202, 1) 50%, rgba(200, 198, 254, 1) 100%);
+}

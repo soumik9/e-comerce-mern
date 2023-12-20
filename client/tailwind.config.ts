@@ -39,8 +39,8 @@ const config: Config = {
         "error-hover": "#A90000",
         "error-hover-light": "#F83F2A",
 
-        warning: "#F8B112",
-        "warning-hover": "#FFCA36",
+        warning: "#FFCA36",
+        "warning-hover": "#F8B112",
 
         success: "#006B60",
         "success-light": "#12B76A",
@@ -50,6 +50,8 @@ const config: Config = {
         bronze: "#AD8A56",
       },
       fontFamily: {
+        primary: ["Noto Sans", "sans-serif"],
+        secondary: ["Alkatra", "cursive"],
       },
     },
     screens: {

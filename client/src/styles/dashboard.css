@@ -1,0 +1,14 @@
+.ps-menu-button:hover {
+    background-color: #A999D2 !important;
+    color: #FFF !important;
+    transition: all ease-in-out 0.5s;
+}
+
+.ps-menuitem-root:hover .ps-active:hover {
+    background-color: #4E4274 !important;
+    transition: background-color ease-in-out 0.5s;
+}
+
+.ps-active {
+    font-weight: 500;
+}
