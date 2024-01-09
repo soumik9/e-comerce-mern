@@ -9,7 +9,8 @@ export const userAddLink = '/panel/user/add'
 
 export const dashboardLayoutUrls = [
     dashboardLink,
-    userLink
+    userLink,
+    userAddLink,
 ];
 
 export const iconSize = 'text-[24px]'

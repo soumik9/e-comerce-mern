@@ -22,16 +22,16 @@ const BreadNavItem = ({ links, item, index }: Props) => {
                 <Link
                     href={item.url}
                     className={cx(
-                        'flex items-center gap-1 trans text-white',
+                        'flex items-center gap-1 trans ',
                         router.pathname === item.url ?
-                            '!text-warning hover:!text-warning-hover font-medium' : "hover:text-gray-500 text-gray-700"
+                            '!text-warning hover:!text-warning-hover font-medium' : "hover:text-gray-300 text-white",
                     )}
                 >
-                    {index === 0 ? <AiOutlineHome className='text-[18px]' /> : null} {item.text}
+                    {index === 0 ? <AiOutlineHome className='text-[18px] relative top-[-2px]' /> : null} {item.text}
                 </Link>
             </li>
 
-            {index < links.length - 1 && <li className="cursor-default text-white relative top-[-1.5px]">/</li>}
+            {index < links.length - 1 && <li className="cursor-default text-white">/</li>}
         </>
     )
 }

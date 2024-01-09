@@ -79,7 +79,7 @@ const DashboardLayout = ({ children }) => {
                 </Menu>
             </Sidebar>
 
-            <main className='w-full bg-gray-200'>
+            <main className='w-full bg-gray-100'>
                 <DashboardHeader
                     broken={broken}
                     toggled={toggled}
@@ -88,7 +88,7 @@ const DashboardLayout = ({ children }) => {
                     setCollapsed={setCollapsed}
                 />
 
-                <div className='mt-8 px-10'>
+                <div className='m-8'>
                     {children}
                 </div>
 

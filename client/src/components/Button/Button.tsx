@@ -16,10 +16,10 @@ type Props = {
   endIcon?: React.ReactNode;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button = ({ type, loadingText, isLoading, text, variant, variantColor, uppercase, css, startIcon, endIcon, width, ...props }: Props) => {
+const Button = ({ type = 'submit', loadingText, isLoading, text, variant, variantColor, uppercase, css, startIcon, endIcon, width, ...props }: Props) => {
   return (
     <button
-      type={type ? type : 'button'}
+      type={type}
       className={cx(
         "trans duration-500 text-white py-3 bg-secondary hover:bg-primary-600 disabled:!bg-primary-300 disabled:!text-gray-300 rounded-lg lg:text-[18px] text-base outline-none",
 

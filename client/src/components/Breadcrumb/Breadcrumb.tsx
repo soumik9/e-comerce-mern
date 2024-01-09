@@ -32,10 +32,13 @@ const Breadcrumb = ({
   const router = useRouter();
 
   // states
-  const [links, setLinks] = useState([{ url: dashboardLink, text: 'Dashboard', isActive: router.pathname === dashboardLink }, ...(getLinks || [])])
+  const [links, setLinks] = useState([
+    { url: dashboardLink, text: 'Dashboard', isActive: router.pathname === dashboardLink },
+    ...(getLinks || [])
+  ])
 
   return (
-    <div className="flex flex-col md:flex-row justify-between md:items-center cardLayout py-4 px-5">
+    <div className="flex flex-col md:flex-row justify-between md:items-center breadcrumbLayout py-4 px-5">
       <div>
         <h2 className="text-[28px] text-white cursor-default font-secondary">
           {title ? title : 'Dashboard'}

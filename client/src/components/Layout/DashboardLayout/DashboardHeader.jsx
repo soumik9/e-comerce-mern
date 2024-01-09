@@ -7,7 +7,7 @@ const DashboardHeader = ({ broken, setToggled, setCollapsed, toggled, collapsed 
     // const { logout } = useAuthLogout();
 
     return (
-        <div className="h-[72px] bg-slate-300 w-full flex justify-between items-center px-10">
+        <div className="h-[72px] bg-slate-300 w-full flex justify-between items-center px-8">
 
             <div>
                 {broken ? (
